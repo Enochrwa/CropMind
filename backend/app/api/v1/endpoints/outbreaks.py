@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import text
-from typing import List, Optional
+from typing import Optional
 from app.db.session import get_db
 
 router = APIRouter(prefix="/outbreaks", tags=["outbreaks"])

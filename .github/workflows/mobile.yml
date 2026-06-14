@@ -18,12 +18,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: mobile/package-lock.json
 
       - name: Install dependencies
         working-directory: mobile
-        run: npm ci
+        run: npm install
+
+      - name: Cache node_modules
+        uses: actions/cache@v4
+        with:
+          path: mobile/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('mobile/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Type check
         working-directory: mobile
@@ -43,12 +49,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: mobile/package-lock.json
 
       - name: Install dependencies
         working-directory: mobile
-        run: npm ci
+        run: npm install
 
       - name: Setup EAS
         run: npm install -g eas-cli

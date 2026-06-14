@@ -2,7 +2,6 @@
 Translation service using Helsinki-NLP OPUS-MT models (free, self-hosted).
 Falls back gracefully if models not loaded.
 """
-from typing import Optional
 from loguru import logger
 
 SUPPORTED_LANGS = {"en", "fr", "sw", "kin", "ha", "am", "pt"}

@@ -9,7 +9,7 @@ from PIL import Image
 from typing import Tuple, Optional
 from loguru import logger
 from app.core.config import settings
-from app.ml.disease_classes import CLASS_LABELS, get_disease_info
+from app.ml.disease_classes import CLASS_LABELS
 
 try:
     import onnxruntime as ort

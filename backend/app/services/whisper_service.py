@@ -23,7 +23,8 @@ async def transcribe_audio(audio_bytes: bytes, language: str = None) -> Tuple[st
     """Returns (transcription_text, detected_language)."""
     if _model is None:
         return "", "en"
-    import tempfile, os
+    import tempfile
+    import os
     with tempfile.NamedTemporaryFile(suffix=".webm", delete=False) as f:
         f.write(audio_bytes)
         tmp_path = f.name

@@ -3,11 +3,9 @@ Core diagnosis enrichment service.
 Takes device prediction → returns full enrichment (treatment, suppliers, prices, AI advisory).
 """
 import json
-import uuid
-from typing import Optional
 from loguru import logger
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy import select, update
+from sqlalchemy import update
 
 from app.core.config import settings
 from app.models.user import User
@@ -18,7 +16,6 @@ from app.ml.disease_classes import get_disease_info
 from app.services.supplier_service import find_nearby_suppliers
 from app.services.market_price_service import get_market_prices
 from app.services.llm_service import generate_treatment_plan
-from app.services.translation_service import translate_enrichment
 
 
 async def enrich_diagnosis(
