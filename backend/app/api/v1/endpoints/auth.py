@@ -11,12 +11,14 @@ router = APIRouter(prefix="/auth", tags=["auth"])
 
 @router.post("/register", response_model=TokenResponse, status_code=201)
 async def register(payload: UserCreate, db: AsyncSession = Depends(get_db)):
-    # Check duplicate
-    existing = await db.execute(
-        select(User).where(
-            or_(User.phone == payload.phone, User.email == payload.email)
-        )
-    )
+    # Build duplicate-check conditions — only include email when it's provided,
+    # because `User.email == None` compiles to `email IS NULL` and would match
+    # every null-email row, causing spurious 409 errors.
+    conditions = [User.phone == payload.phone]
+    if payload.email is not None:
+        conditions.append(User.email == payload.email)
+
+    existing = await db.execute(select(User).where(or_(*conditions)))
     if existing.scalar_one_or_none():
         raise HTTPException(status_code=409, detail="Phone or email already registered")
 

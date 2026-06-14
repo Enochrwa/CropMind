@@ -10,13 +10,6 @@ class TopUpRequest(BaseModel):
     payment_method: str = "stripe"  # stripe | momo | cash_agent
     payment_reference: Optional[str] = None
 
-    @field_validator("amount_rwf")
-    @classmethod
-    def min_amount(cls, v: float) -> float:
-        if v < 500:
-            raise ValueError("Minimum top-up is 500 RWF")
-        return v
-
 
 class BalanceOut(BaseModel):
     balance_rwf: float
