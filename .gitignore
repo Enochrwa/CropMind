@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Environment
+.env
+.env.local
+.env.production
+*.env
+
+# Logs
+logs/
+*.log
+
+# Database
+*.db
+*.sqlite3
+
+# ML models (large files — use Git LFS or link separately)
+backend/app/ml/models/*.onnx
+backend/app/ml/models/*.tflite
+backend/app/ml/models/*.pth
+ml/exports/*.onnx
+ml/exports/*.tflite
+ml/exports/*.pth
+ml/datasets/plantvillage/
+ml/datasets/contributions/
+
+# Node
+node_modules/
+.expo/
+dist/
+.cache/
+
+# iOS / Android builds
+mobile/ios/
+mobile/android/
+*.apk
+*.ipa
+*.aab
+
+# Docker
+.dockerignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test artifacts
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# Alembic (keep versions, ignore pycache)
+backend/alembic/versions/__pycache__/

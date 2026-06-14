@@ -1,0 +1,65 @@
+{
+  "app": {
+    "name": "CropMind",
+    "tagline": "Elekeza. Gundua. Okoa mavuno yako."
+  },
+  "camera": {
+    "title": "Scan Mazao Yako",
+    "instruction": "Elekeza kamera kwenye jani au mmea uliougua",
+    "capture": "Piga picha",
+    "analyzing": "Inachambua...",
+    "scanning": "Inascan mmea..."
+  },
+  "diagnosis": {
+    "title": "Matokeo ya Uchunguzi",
+    "disease": "Ugonjwa Uliogunduliwa",
+    "severity": "Ukali",
+    "confidence": "Usahihi",
+    "treatment": "Mpango wa Matibabu",
+    "prevention": "Vidokezo vya Kuzuia",
+    "suppliers": "Wasambazaji wa Karibu",
+    "market": "Bei za Soko",
+    "healthy": "Mmea wako unaonekana kuwa mzima!",
+    "step": "Hatua"
+  },
+  "severity": {
+    "none": "Mzima",
+    "low": "Ndogo",
+    "medium": "Wastani",
+    "high": "Mkubwa",
+    "critical": "Hatari — Chukua hatua sasa!"
+  },
+  "balance": {
+    "title": "Salio Langu",
+    "topup": "Ongeza Salio",
+    "current": "Salio la Sasa",
+    "history": "Historia ya Miamala",
+    "insufficient": "Salio halitatoshi. Ongeza ili kuendelea.",
+    "minimum": "Kiwango cha chini cha kuongeza: 500 RWF"
+  },
+  "history": {
+    "title": "Historia ya Shamba",
+    "empty": "Hakuna uchunguzi bado. Scan mazao yako ya kwanza!",
+    "diagnoses": "uchunguzi"
+  },
+  "voice": {
+    "title": "Uliza Mtaalamu wa Kilimo",
+    "hold": "Shikilia ili kusema",
+    "release": "Achia kutuma",
+    "listening": "Sikiliza...",
+    "processing": "Inachakata..."
+  },
+  "settings": {
+    "title": "Mipangilio",
+    "language": "Lugha",
+    "notifications": "Arifa",
+    "offline": "Hali ya Nje ya Mtandao",
+    "about": "Kuhusu CropMind"
+  },
+  "errors": {
+    "network": "Hakuna muunganisho wa intaneti. Hali ya nje ya mtandao inafanya kazi.",
+    "camera": "Ruhusa ya kamera inahitajika",
+    "balance": "Salio halitatoshi",
+    "generic": "Kitu fulani kimekwenda vibaya. Tafadhali jaribu tena."
+  }
+}

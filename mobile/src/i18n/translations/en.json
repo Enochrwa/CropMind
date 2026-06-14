@@ -1,0 +1,65 @@
+{
+  "app": {
+    "name": "CropMind",
+    "tagline": "Point. Diagnose. Save your harvest."
+  },
+  "camera": {
+    "title": "Scan Your Crop",
+    "instruction": "Point camera at the diseased leaf or plant",
+    "capture": "Capture",
+    "analyzing": "Analyzing...",
+    "scanning": "Scanning plant..."
+  },
+  "diagnosis": {
+    "title": "Diagnosis Result",
+    "disease": "Disease Detected",
+    "severity": "Severity",
+    "confidence": "Confidence",
+    "treatment": "Treatment Plan",
+    "prevention": "Prevention Tips",
+    "suppliers": "Nearby Suppliers",
+    "market": "Market Prices",
+    "healthy": "Your plant looks healthy!",
+    "step": "Step"
+  },
+  "severity": {
+    "none": "Healthy",
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High",
+    "critical": "Critical — Act Now!"
+  },
+  "balance": {
+    "title": "My Balance",
+    "topup": "Top Up",
+    "current": "Current Balance",
+    "history": "Transaction History",
+    "insufficient": "Insufficient balance. Top up to continue.",
+    "minimum": "Minimum top-up: 500 RWF"
+  },
+  "history": {
+    "title": "Farm History",
+    "empty": "No diagnoses yet. Scan your first crop!",
+    "diagnoses": "diagnoses"
+  },
+  "voice": {
+    "title": "Ask the Agronomist",
+    "hold": "Hold to speak",
+    "release": "Release to send",
+    "listening": "Listening...",
+    "processing": "Processing..."
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "notifications": "Notifications",
+    "offline": "Offline Mode",
+    "about": "About CropMind"
+  },
+  "errors": {
+    "network": "No internet connection. Offline mode active.",
+    "camera": "Camera permission required",
+    "balance": "Insufficient balance",
+    "generic": "Something went wrong. Please try again."
+  }
+}

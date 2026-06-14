@@ -1,0 +1,55 @@
+# Web framework
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+
+# Database
+sqlalchemy==2.0.30
+alembic==1.13.1
+asyncpg==0.29.0
+psycopg2-binary==2.9.9
+geoalchemy2==0.15.1
+
+# Cache & queue
+redis==5.0.4
+celery==5.4.0
+flower==2.0.1
+
+# Auth & security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-dotenv==1.0.1
+
+# ML inference
+onnxruntime==1.18.0
+Pillow==10.3.0
+numpy==1.26.4
+
+# AI / LLM
+httpx==0.27.0
+openai==1.30.1
+
+# Audio
+faster-whisper==1.0.2
+
+# Translation
+sentencepiece==0.2.0
+transformers==4.41.1
+torch==2.3.0
+sacremoses==0.1.1
+
+# Payments / balance
+stripe==9.9.0
+
+# Utilities
+pydantic==2.7.1
+pydantic-settings==2.3.0
+loguru==0.7.2
+tenacity==8.3.0
+boto3==1.34.110
+Shapely==2.0.4
+
+# Testing
+pytest==8.2.1
+pytest-asyncio==0.23.7
+httpx==0.27.0

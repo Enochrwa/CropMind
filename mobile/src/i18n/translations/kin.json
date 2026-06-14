@@ -1,0 +1,65 @@
+{
+  "app": {
+    "name": "CropMind",
+    "tagline": "Funga. Suzuma. Bungabunga umusaruro wawe."
+  },
+  "camera": {
+    "title": "Suzuma Igihingwa Cyawe",
+    "instruction": "Shyira kamera ku giti cyangwa ikibabi kirwaye",
+    "capture": "Fata ifoto",
+    "analyzing": "Gusuzuma...",
+    "scanning": "Gusuzuma igihingwa..."
+  },
+  "diagnosis": {
+    "title": "Igisubizo cy'Isuzuma",
+    "disease": "Indwara Yabonetse",
+    "severity": "Uburemere",
+    "confidence": "Urwego rw'Ukuri",
+    "treatment": "Gahunda yo Kuvura",
+    "prevention": "Inama zo Kurinda",
+    "suppliers": "Abaguzi Hafi",
+    "market": "Ibiciro by'Isoko",
+    "healthy": "Igihingwa cyawe gifite ubuzima!",
+    "step": "Intambwe"
+  },
+  "severity": {
+    "none": "Mzima",
+    "low": "Buke",
+    "medium": "Hagati",
+    "high": "Bikabije",
+    "critical": "Bikomeye cyane — Fata ingamba ubu!"
+  },
+  "balance": {
+    "title": "Imari Yanjye",
+    "topup": "Shyiramo Amafaranga",
+    "current": "Amafaranga Ufite Ubu",
+    "history": "Amateka y'Ibikorwa",
+    "insufficient": "Amafaranga ntahagije. Shyiramo kugira ngo ukomeze.",
+    "minimum": "Ubwiyongere buke: 500 RWF"
+  },
+  "history": {
+    "title": "Amateka y'Umugi",
+    "empty": "Nta suzuma narigeze! Suzuma igihingwa cyawe cya mbere!",
+    "diagnoses": "isuzuma"
+  },
+  "voice": {
+    "title": "Baza Inzobere mu Buhinzi",
+    "hold": "Fata kugira ngo uvuge",
+    "release": "Rekura kohereza",
+    "listening": "Numva...",
+    "processing": "Gusuzuma..."
+  },
+  "settings": {
+    "title": "Igenamiterere",
+    "language": "Ururimi",
+    "notifications": "Imenyesha",
+    "offline": "Imiterere y'Aho Intaneti Idahari",
+    "about": "Ibyerekeye CropMind"
+  },
+  "errors": {
+    "network": "Nta gutumanaho. Imiterere y'aho intaneti idahari irimo gukora.",
+    "camera": "Uburenganzira bwa kamera burakenewe",
+    "balance": "Amafaranga ntahagije",
+    "generic": "Hari ikitagenze neza. Ongera ugerageze."
+  }
+}
