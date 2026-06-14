@@ -4,7 +4,7 @@ and agronomist Q&A responses.  Zero API cost.
 """
 import json
 import httpx
-from typing import Any, Dict, List
+from typing import Any, Dict
 from loguru import logger
 from tenacity import retry, stop_after_attempt, wait_exponential
 from app.core.config import settings
